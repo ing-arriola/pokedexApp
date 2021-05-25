@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { styles } from '../theme/appTheme';
 
 export const HomeScreen = (props) => {
@@ -8,6 +9,10 @@ export const HomeScreen = (props) => {
 
     return (
         <View>
+            <Image 
+                source={require('../assets/pokebola.png')}
+                style={styles.pokebolaBG}
+            />
             <Text
                 style={
                     {
