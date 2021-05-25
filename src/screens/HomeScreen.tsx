@@ -18,7 +18,7 @@ export const HomeScreen = (props) => {
             >
                 Pokedex
             </Text>
-            <Button onPress={()=>{props.navigation.navigate('PokemonScreen')}} title='holas' />
+
         </View>
             
     )
