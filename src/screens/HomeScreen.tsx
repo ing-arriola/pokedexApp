@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text, Button} from 'react-native'
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 export const HomeScreen = (props) => {
     return (
@@ -12,3 +12,10 @@ export const HomeScreen = (props) => {
             
     )
 }
+
+const stylesHome= StyleSheet.create({
+    title:{
+        fontSize:35,
+        fontWeight:'bold'
+    }
+})
