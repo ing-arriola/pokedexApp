@@ -1,11 +1,22 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native';
+import { styles } from '../theme/appTheme';
 
 export const HomeScreen = (props) => {
+
+    const {top} = useSafeAreaInsets()
+
     return (
         <View>
-            <Text>
-                HomePage
+            <Text
+                style={
+                    {
+                        ...stylesHome.title,
+                        top:top+20,
+                        ...styles.globalMargin
+                    }}
+            >
+                Pokedex
             </Text>
             <Button onPress={()=>{props.navigation.navigate('PokemonScreen')}} title='holas' />
         </View>
