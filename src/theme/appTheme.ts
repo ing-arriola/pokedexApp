@@ -6,6 +6,10 @@ export const styles = StyleSheet.create({
     },
     pokebolaBG: {
         width:300,
-        height:300
+        height:300,
+        position:'absolute',
+        right:-100,
+        top:-100,
+        opacity:0.3
     }
 })
