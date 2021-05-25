@@ -7,7 +7,14 @@ const Stack = createStackNavigator();
 
 const Navigator = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+        screenOptions={{
+            headerShown:false,
+            cardStyle:{
+                backgroundColor:'#fff'
+            }
+        }}
+    >
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="PokemonScreen" component={PokemonScreen} />
       
