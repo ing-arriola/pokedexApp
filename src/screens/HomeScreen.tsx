@@ -7,7 +7,7 @@ export const HomeScreen = (props) => {
             <Text>
                 HomePage
             </Text>
-            <Button onPress={()=>{props.navigation.navigate('PokemonScreen')}} title='pedo' />
+            <Button onPress={()=>{props.navigation.navigate('PokemonScreen')}} title='holas' />
         </View>
             
     )
