@@ -33,7 +33,16 @@ const stylesCard = StyleSheet.create({
         height:120,
         width:deviceWidth*0.4,
         marginBottom:25,
-        borderRadius:10
+        borderRadius:10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 5,
+        },
+        shadowOpacity: 0.34,
+        shadowRadius: 6.27,
+
+        elevation: 10,
     },
     name:{
         fontSize:20,
