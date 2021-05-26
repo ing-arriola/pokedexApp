@@ -21,6 +21,17 @@ export const PokemonCard = ({pokemon}: Props) => {
                 {pokemon.name}
                 {'\n#'+ pokemon.id }
                 </Text>
+                <View style={stylesCard.whitePokeballContainer} > 
+                    <Image
+                        source={require('../assets/pokebola-blanca.png') }
+                        style={stylesCard.pokeball}
+                    />
+                </View>
+                <FadeInImage
+                    uri={pokemon.picture}
+                    style={stylesCard.pokemonImage}
+                />
+                
             </View>
         </TouchableOpacity>
     )
