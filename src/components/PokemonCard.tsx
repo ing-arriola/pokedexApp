@@ -40,5 +40,19 @@ const stylesCard = StyleSheet.create({
         fontWeight:'bold',
         top:20,
         left:10
+    pokeball:{
+        height:100,
+        width:100,
+        position:'absolute',
+        bottom:-20,
+        right:-20,
+        opacity:0.6
+    },
+    pokemonImage:{
+        height:100,
+        width:100,
+        position:'absolute',
+        right:-3,
+        bottom:-5
     }
 })
