@@ -61,6 +61,15 @@ const stylesCard = StyleSheet.create({
         fontWeight:'bold',
         top:20,
         left:10
+    },
+    whitePokeballContainer:{
+        height:100,
+        width:100,
+        position:'absolute',
+        bottom:0,
+        right:0,
+        overflow:'hidden'
+    },
     pokeball:{
         height:100,
         width:100,
