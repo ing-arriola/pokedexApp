@@ -59,7 +59,7 @@ const stylesCard = StyleSheet.create({
         fontSize:20,
         color:'#fff',
         fontWeight:'bold',
-        top:20,
+        top:8,
         left:10
     },
     whitePokeballContainer:{
