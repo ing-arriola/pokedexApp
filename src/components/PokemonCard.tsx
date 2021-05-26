@@ -2,6 +2,7 @@ import React from 'react'
 import { Text, View, StyleSheet, Dimensions, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { SimplePokemon } from '../interfaces/pokeInterface';
+import { FadeInImage } from './FadeInImage';
 
 
 const deviceWidth = Dimensions.get('window').width
