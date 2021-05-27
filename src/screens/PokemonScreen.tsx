@@ -60,3 +60,36 @@ export const PokemonScreen = ( { navigation, route,  }:Props ) => {
             
     )
 }
+
+const styles = StyleSheet.create({
+    header:{
+        height:370,
+        zIndex:999,
+        alignItems:'center',
+        borderBottomRightRadius:1000,
+        borderBottomLeftRadius:1000
+
+    },
+    backButton:{
+        position:'absolute',
+        left:20,
+    },
+    name:{
+        fontSize:40,
+        color:'#fff',
+        alignSelf:'flex-start',
+        left: 20
+    },
+    whitePokeBall:{
+        height:250,
+        width:250,
+        bottom:-20,
+        opacity:0.8
+    },
+    pokemonImage:{
+        height:200,
+        width:200,
+        position:'absolute',
+        bottom:-15
+    },
+})
