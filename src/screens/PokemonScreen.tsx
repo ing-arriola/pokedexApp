@@ -1,7 +1,9 @@
+import { StackScreenProps } from '@react-navigation/stack'
 import React from 'react'
-import {View, Text} from 'react-native'
+import { RootStackParams } from '../navigator/Navigator';
 
-export const PokemonScreen = () => {
+interface Props extends StackScreenProps<RootStackParams , 'PokemonScreen' >  {}
+export const PokemonScreen = ( { navigation, route,  }:Props ) => {
     return (
         <View>
             <Text>
