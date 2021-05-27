@@ -84,6 +84,29 @@ export const PokemonDetails = ( {pokemon} : Props ) => {
                     style={styles.sprites}
                 />
             </ScrollView>
+            <View
+                style={styles.container}
+            >
+                <Text  
+                    style={{
+                        ...styles.title,
+                    }}
+                >
+                    Abilities
+                </Text>
+                <View style={ { flexDirection:'row' } } >
+                    {
+                        pokemon.abilities.map( (poke) => (
+                            <Text
+                                style={{...styles.regularText}}
+                                key={poke.ability.name}
+                            >
+                                {poke.ability.name}
+                            </Text>
+                        ) )
+                    }
+                </View>
+            </View>
                 </View>
             </View>
         </ScrollView>
