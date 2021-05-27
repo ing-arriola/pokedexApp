@@ -52,6 +52,38 @@ export const PokemonDetails = ( {pokemon} : Props ) => {
                 </Text>
                 <Text style={styles.regularText} >{pokemon.weight} kg</Text>
             </View>
+            <View
+                style={styles.container}
+            >
+                <Text  
+                    style={{
+                        ...styles.title,
+                    }}
+                >
+                    Sprites
+                </Text>
+            </View>
+            <ScrollView  
+            horizontal={true}
+            showsHorizontalScrollIndicator={false} 
+            >
+                <FadeInImage 
+                    uri={pokemon.sprites.front_default}
+                    style={styles.sprites}
+                />
+                <FadeInImage 
+                    uri={pokemon.sprites.back_default}
+                    style={styles.sprites}
+                />
+                <FadeInImage 
+                    uri={pokemon.sprites.front_shiny}
+                    style={styles.sprites}
+                />
+                <FadeInImage 
+                    uri={pokemon.sprites.back_shiny}
+                    style={styles.sprites}
+                />
+            </ScrollView>
                 </View>
             </View>
         </ScrollView>
