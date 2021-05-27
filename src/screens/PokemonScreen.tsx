@@ -17,6 +17,8 @@ export const PokemonScreen = ( { navigation, route,  }:Props ) => {
 
     const {top} = useSafeAreaInsets()
 
+    const {pokemon, isLoading} = usePokemon(id)
+    
     return (
         <View>
             <Text>
