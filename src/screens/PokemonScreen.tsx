@@ -56,6 +56,20 @@ export const PokemonScreen = ( { navigation, route,  }:Props ) => {
                     uri={picture}
                 />
             </View>
+          {
+              isLoading ? (
+                <View
+                    style={styles.loading}
+                > 
+                    <ActivityIndicator
+                        color={color}
+                        size={80}
+                    />
+                </View>
+              ) :(
+                  <PokemonDetails pokemon={pokemon} />
+              )
+          }
         </View>
             
     )
