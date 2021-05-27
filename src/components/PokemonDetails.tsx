@@ -103,5 +103,9 @@ const styles = StyleSheet.create({
         fontSize:17,
         marginRight:10
     },
+    sprites:{
+        height:100,
+        width:100
+    },
 }
 )
