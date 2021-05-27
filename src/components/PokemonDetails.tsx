@@ -130,6 +130,39 @@ export const PokemonDetails = ( {pokemon} : Props ) => {
                     }
                 </View>
             </View>
+            <View
+                style={{...styles.container, marginBottom:30}}
+            >
+                <Text  
+                    style={{
+                        ...styles.title,
+                    }}
+                >
+                    Stats
+                </Text>
+                <View >
+                    
+                    {
+                        pokemon.stats.map( (poke,i) => (
+                            <View key={poke.stat.name+i}  
+                                style={styles.stats}
+                            >
+                                <Text
+                                style={{...styles.regularText, width:150}}
+                                key={poke.stat.name}
+                            >
+                                {poke.stat.name}
+                            </Text>
+                            <Text
+                                style={{...styles.regularText, fontWeight:'bold'}}
+                                key={poke.base_stat}
+                            >
+                                {poke.base_stat}
+                            </Text>
+                            </View>
+                        ) )
+                    }
+
                 </View>
             </View>
         </ScrollView>
@@ -153,5 +186,8 @@ const styles = StyleSheet.create({
         height:100,
         width:100
     },
+    stats:{
+        flexDirection:'row',
+    }
 }
 )
