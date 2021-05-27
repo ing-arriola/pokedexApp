@@ -107,6 +107,29 @@ export const PokemonDetails = ( {pokemon} : Props ) => {
                     }
                 </View>
             </View>
+            <View
+                style={styles.container}
+            >
+                <Text  
+                    style={{
+                        ...styles.title,
+                    }}
+                >
+                    Moves
+                </Text>
+                <View style={ { flexDirection:'row', flexWrap:'wrap' } } >
+                    {
+                        pokemon.moves.map( (poke) => (
+                            <Text
+                                style={{...styles.regularText}}
+                                key={poke.move.name}
+                            >
+                                {poke.move.name}
+                            </Text>
+                        ) )
+                    }
+                </View>
+            </View>
                 </View>
             </View>
         </ScrollView>
