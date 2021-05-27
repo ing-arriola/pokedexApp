@@ -106,4 +106,9 @@ const styles = StyleSheet.create({
         position:'absolute',
         bottom:-15
     },
+    loading:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center'
+    }
 })
