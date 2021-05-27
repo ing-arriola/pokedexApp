@@ -46,7 +46,7 @@ export const PokemonScreen = ( { navigation, route,  }:Props ) => {
                     }}
                 >
                     {name + '\n' }#{id}
-            </Text>
+                </Text>
                 <Image
                     style={styles.whitePokeBall}
                     source={require('../assets/pokebola-blanca.png')}
@@ -70,7 +70,7 @@ export const PokemonScreen = ( { navigation, route,  }:Props ) => {
                   <PokemonDetails pokemon={pokemon} />
               )
           }
-        </View>
+       </View>
             
     )
 }
