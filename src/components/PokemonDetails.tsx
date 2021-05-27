@@ -40,6 +40,18 @@ export const PokemonDetails = ( {pokemon} : Props ) => {
                     }
                 </View>
             </View>
+            <View
+                style={styles.container}
+            >
+                <Text  
+                    style={{
+                        ...styles.title,
+                    }}
+                >
+                    Weight
+                </Text>
+                <Text style={styles.regularText} >{pokemon.weight} kg</Text>
+            </View>
                 </View>
             </View>
         </ScrollView>
