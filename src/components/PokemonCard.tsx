@@ -31,6 +31,7 @@ export const PokemonCard = ({pokemon}: Props) => {
                     setbgColor(color.background || 'grey')
                 }
             })
+            .catch( err => console.log('There has been a problem with your fetch operation: ' + err.message) )
 
             return () => {
                 isMounted.current=false
